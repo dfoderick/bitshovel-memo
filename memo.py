@@ -5,7 +5,7 @@
 import sys
 import redis
 
-RED = redis.Redis()
+RED = redis.Redis(host="127.0.0.1", port="6379")
 BUS = RED.pubsub()
 
 def main():
